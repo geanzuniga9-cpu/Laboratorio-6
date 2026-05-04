@@ -1,0 +1,23 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Validacionsimple : MonoBehaviour
+{
+    List<string> frutas = new List<string>();
+
+    private void Start()
+    {
+        frutas.Add("Manzana");
+        frutas.Add("platano"); 
+        frutas.Add("Uva");
+
+        if (frutas[1] == "platano")
+        {
+            print("Validación exitosa: Es un platano");
+        }
+        else
+        {
+            print("El valor es diferente");
+        }
+    }
+}
