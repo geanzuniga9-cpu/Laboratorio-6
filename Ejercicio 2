@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class Modificiarposicion : MonoBehaviour
+{
+    int[] numero = new int[3];
+
+    private void Start()
+    {
+        numero[0] = 5;
+        numero[1] = 10;
+        numero[2] = 15;
+        numero[3] = 20;
+        numero[4] = 25;
+
+        //cambios el valor de la posicion 2
+        numero[2] = 100;
+
+        print("El nuevo valor en la posición 2 es: " + numero[2]);
+    }
+}
