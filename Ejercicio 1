@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class Primereleyultimo: MonoBehaviour
+{
+    int[] numeros = new int[5];
+    void Start()
+    {
+        numeros[0] = 10;
+        numeros[1] = 20;
+        numeros[2] = 30;
+        numeros[3] = 40;
+        numeros[4] = 50;
+
+        print("primer numero : " + numeros[0]);
+        print("ultimo numero : " + numeros[numeros.Length - 1]);
+    }
+}
