@@ -1,0 +1,16 @@
+using UnityEngine;
+
+public class Aceesoalista : MonoBehaviour
+{
+    string[] elementos = new string[4]; 
+
+    private void Start()
+    {
+        elementos[0] = "fuego";
+        elementos[1] = "agua";
+        elementos[2] = "tierra";
+        elementos[3] = "aire";
+
+        print("Primer elemento: " + elementos[1]);
+    }
+}
