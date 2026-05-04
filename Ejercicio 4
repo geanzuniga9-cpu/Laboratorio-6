@@ -1,0 +1,21 @@
+using System.Collections.Generic;
+using UnityEditor.Rendering;
+using UnityEngine;
+
+public class Eliminarelemento : MonoBehaviour
+{
+    List<string> nombres = new List<string>();
+
+    private void Start()
+    {
+        nombres.Add("pepe");
+        nombres.Add("juan");
+        nombres.Add("Cristiano");
+        nombres.Add("riquelme");
+
+        nombres.Remove("cristiano");
+
+        print("nombres restante : " + nombres.Count);
+    }
+
+}
