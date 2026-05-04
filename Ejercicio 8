@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class Intercambiarvalores : MonoBehaviour
+{
+    int[] numeros = new int[4];
+
+    private void Start()
+    {
+        numeros[0] = 5;
+        numeros[1] = 10;
+        numeros[2] = 15;
+        numeros[3] = 20;
+
+        int cambio = numeros[0];
+        numeros[0] = numeros[2];
+        numeros[2] = cambio;
+
+        print("Ahora la posicion 0 vale: " + numeros[0]);
+        print("Ahora la posicion 2 vale: " + numeros[2]);
+
+    }
+}
