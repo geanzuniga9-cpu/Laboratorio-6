@@ -1,0 +1,28 @@
+using UnityEngine;
+
+public class Mayorde3 : MonoBehaviour
+{
+    int[] velocidad = new int[3];
+
+    private void Start()
+    {
+        velocidad[0] = 20;
+        velocidad[1] = 40;
+        velocidad[2] = 60;
+
+        if (velocidad[0] > velocidad[1] && velocidad[0] > velocidad[2])
+        {
+            print("El mayor es: " + velocidad[0]);
+        }
+        else if (velocidad[1] > velocidad[2])
+        {
+            print("El mayor es: " + velocidad[1]);
+        }
+        else
+        {
+            print("El mayor es: " + velocidad[2]);
+        }
+
+    }
+
+}
