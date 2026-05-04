@@ -1,0 +1,24 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class Comprarposciones : MonoBehaviour
+{
+    int[] puntos = new int[3];
+    private void Start()
+    {
+        puntos[0] = 20;
+        puntos[1] = 40;
+        puntos[2] = 60;
+
+        if (puntos[1] > puntos[0])
+        {
+            print("El mayor es de la posicion 1: " + puntos[1]);
+        }
+
+        else
+        {
+            print("El mayor es el de la posicion 0: " + puntos[0]);
+        }
+    }
+}
